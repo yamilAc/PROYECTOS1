@@ -19,9 +19,9 @@ function ProductPage({ product }) {
   return (
     <Layout>
       <div className="p-6 bg-white dark:bg-gray-800">
-        <p>Name: {product.name}</p>
-        <p>Description: {product.description}</p>
-        <p>Price: {product.price}</p>
+        <p>Nombre: {product.name}</p>
+        <p>Descripcion: {product.description}</p>
+        <p>Precio: {product.price}</p>
       </div>
 
       <div className="mt-7 flex justify-center">
@@ -29,13 +29,13 @@ function ProductPage({ product }) {
           className="bg-red-500 hover:bg-red-700 py-2 px-3 rounded"
           onClick={() => handleDelete(product.id)}
         >
-          delete
+            ELIMINAR
         </button>
         <button
-          className="bg-gray-500 hover:bg-gray-800 ml-2 py-2 px-5 rounded"
+          className="bg-gray-500 hover:bg-yellow-800 ml-2 py-2 px-5 rounded"
           onClick={() => router.push("/products/edit/" + product.id)}
         >
-          Edit
+          EDITAR
         </button>
       </div>
     </Layout>

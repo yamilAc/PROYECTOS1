@@ -66,12 +66,12 @@ export function ProductForm() {
             className="block text-gray-700 dark:text-white text-sm font-bold mb-2"
             htmlFor="name"
           >
-            Product Name
+            Nombre del Producto
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-600 dark:border-slate-900 dark:text-white"
             type="text"
-            placeholder="name"
+            placeholder="nombre"
             id="name"
             name="name"
             onChange={handleChange}
@@ -85,7 +85,7 @@ export function ProductForm() {
             htmlFor="price"
             className="block text-gray-700 dark:text-white font-bold mb-2 text-sm"
           >
-            Product Price:
+            Precio del producto
           </label>
           <input
             type="text"
@@ -102,13 +102,13 @@ export function ProductForm() {
             htmlFor="description"
             className="block text-gray-700 dark:text-white font-bold mb-2 text-sm"
           >
-            Write a Description
+            Escribe la descripcion
           </label>
           <textarea
             name="description"
             id="description"
             rows="2"
-            placeholder="Product description"
+            placeholder="Descripcion del producto"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-600 dark:border-slate-900 dark:text-white"
             onChange={handleChange}
             value={product.description}
@@ -116,7 +116,7 @@ export function ProductForm() {
         </div>
 
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-          {router.query?.id ? "Update Product" : "Save Product"}
+          {router.query?.id ? "Editar Producto" : "Guardar Producto"}
         </button>
       </form>
     </div>

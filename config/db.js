@@ -4,7 +4,7 @@ const pool = mysql({
   config: {
     host: "localhost",
     user: "root",
-    password: "password",
+    password: "Univalle",
     port: 3306,
     database: "productsdb",
   },
